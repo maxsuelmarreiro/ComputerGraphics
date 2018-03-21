@@ -1,7 +1,7 @@
 /* Modulo: Imterface do TAD: Image
  *
- * Curso: ComputaÁ„o Gr·fica - 2000
- * Ultima alteraÁ„o: 06mar2000
+ * Curso: Computa√ß√£o Gr√°fica - 2000
+ * Ultima altera√ß√£o: 06mar2000
  */
 
 #ifndef IMAGE_H
