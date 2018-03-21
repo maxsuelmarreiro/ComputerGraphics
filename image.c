@@ -1,7 +1,7 @@
-/* Modulo: ImplementaÁ„o do TAD: Imagem
+/* Modulo: Implementa√ß√£o do TAD: Imagem
  *
- * Curso: ComputaÁ„o Gr·fica - 2000
- * Ultima alteraÁ„o: 06mar2000
+ * Curso: Computa√ß√£o Gr√°fica - 2000
+ * Ultima altera√ß√£o: 06mar2000
  */
 
 #include <stdlib.h>
@@ -10,8 +10,8 @@
 #include "image.h"
 
 struct Image_impl{
-	int   h;                  /* n˙mero de linhas da Image */
-	int   w;                  /* n˙mero de colunas da Image */
+	int   h;                  /* n√∫mero de linhas da Image */
+	int   w;                  /* n√∫mero de colunas da Image */
 	int color;				  /* [0,1] 0 - gray 1 - color image */
 	unsigned char *red;       /* matriz das componentes vermelha  */
 	unsigned char *green;     /* matriz das componentes verde  */
@@ -92,7 +92,7 @@ unsigned char *imgGetBlueChannel(Image *img) {
 	return img->blue;
 }
 
-/* funÁıes clientes das acima */
+
 Image * imgReadPPM(char *filename) {
 	Image *img=NULL; /* imagem criada */
 	FILE *fp;
@@ -151,7 +151,7 @@ int imgWritePPM(Image * img, char * filename)
 		return 0;
 	}
 
-	/*cabeÁalho de um arquivo .ppm */
+	/*cabe√ßalho de um arquivo .ppm */
 	fprintf(fp,"P6\n%d %d\n%d\n", img->w, img->h, maxcolor);
 
 	/* gravando invertendo o eixo y */
